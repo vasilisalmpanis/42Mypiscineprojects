@@ -1,6 +1,6 @@
 # Hell0 W0rld 👏
 
-My name is Vasilis and I am an agronomist from Greece. These is my repository for the projects I finished during a 4-week C
+My name is Vasilis and I am an agronomist from Greece. This is my repository for the projects I finished during a 4-week C
 coding bootcamp(piscine) in  42 Wolfsburg Germany.
 
 Below you can see the grades I acquired during the piscine

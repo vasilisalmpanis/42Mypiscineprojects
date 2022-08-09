@@ -6,11 +6,11 @@
 /*   By: valmpani <valmpani@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 09:31:45 by valmpani          #+#    #+#             */
-/*   Updated: 2022/08/08 09:40:14 by valmpani         ###   ########.fr       */
+/*   Updated: 2022/08/09 16:22:33 by valmpani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stdlib.h> 
 
 int	ft_strlen(char *src)
 {

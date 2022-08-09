@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: valmpani <valmpani@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 13:21:20 by valmpani          #+#    #+#             */
-/*   Updated: 2022/08/08 13:21:23 by valmpani         ###   ########.fr       */
+/*   Updated: 2022/08/09 10:42:56 by valmpani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,9 +79,14 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 {
 	int		u_length;
 	char	*buffer;
+	char	*b;
 
 	if (size == 0)
-		return (0);
+	{
+		b = (char *)malloc(sizeof(char));
+		b[0] = '\0';
+		return (b);
+	}
 	u_length = ft_find_total_length(strs, ft_strlen(sep), size);
 	buffer = (char *)malloc(sizeof(char) * (u_length + 1));
 	if (!buffer)
@@ -98,18 +103,18 @@ int	main(void)
 	char	*separator;
 	char	*result;
 
-	strs = (char**)malloc(4 * sizeof(strs));
-	strs[0] = "";
-	strs[1] = "";
-	strs[2] = "";
-	strs[3] = "";
-	strs[3] = "";
+	strs = (char**)malloc(5 * sizeof(strs));
+	strs[0] = "my";
+	strs[1] = "name";
+	strs[2] = "is";
+	strs[3] = "vasilis";
+	strs[4] = "hello";
 	separator = "//";
 	index = 0;
-	while (index < 5)
+	while (index < 6)
 	{
 		result = ft_strjoin(index, strs, separator);
-		printf("result with size = %d : $%s$\n", index, result);
+		printf("result with size = %d : %s\n", index, result);
 		free(result);
 		index++;
 	}

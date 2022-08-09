@@ -6,7 +6,7 @@
 /*   By: valmpani <valmpani@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 09:44:05 by valmpani          #+#    #+#             */
-/*   Updated: 2022/08/08 10:06:08 by valmpani         ###   ########.fr       */
+/*   Updated: 2022/08/09 09:27:49 by valmpani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,32 @@
 
 int	*ft_range(int min, int max)
 {
-	int	temp;
+	int	index;
 	int	*array;
+	int	*d;
 	int	bound;
 
 	if (min >= max)
 	{
 		return (0);
 	}
-	bound = (max - min) - 1;
+	bound = (max - min);
 	array = (int *)malloc(sizeof(int) * bound);
-	if (array == NULL)
+	d = array;
+	if (d == NULL)
 		return (0);
-	temp = min + 1;
-	while (temp < max)
+	index = 0;
+	while (index < bound)
 	{
-		*array = temp;
-		array++;
-		temp++;
+		array[index] = min + index;
+		index++;
 	}
 	return (array);
 }
 
 /* int main(void)
 {
-	ft_range(3,2);
+	int *array;
+	array = ft_range(0,1);
 }
  */

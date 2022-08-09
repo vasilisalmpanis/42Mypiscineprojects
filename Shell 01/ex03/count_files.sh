@@ -1,1 +1,1 @@
-find . | wc -l | tr -d ' '
+find . -print | awk 'END {print NR}'

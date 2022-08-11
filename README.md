@@ -15,8 +15,10 @@ Below you can see the grades I acquired during the piscine.
 |   C 05   |      80   %  |
 |   C 06   |      **100**  %  |
 |   C 07   |      60% |
+|   C 08   | 70%      |
+|   C 09   | **No Grade**      |
 |   S 00   |      **100**  %  |
-|   S 01   | **No Grade**      |
+|   S 01   | 70%      |
 |   **Exam00**  | 48%      |
 |   **Exam01**   | 64%      |
 |   **Exam02**   | 70%     |

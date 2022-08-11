@@ -6,12 +6,12 @@
 /*   By: valmpani <valmpani@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 13:03:57 by valmpani          #+#    #+#             */
-/*   Updated: 2022/08/09 13:50:31 by valmpani         ###   ########.fr       */
+/*   Updated: 2022/08/11 12:48:57 by valmpani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_BOOLEAN_H
-# define FT_BOOLEAN_H
+# define FT_BOOLEAN_H 
 
 # include <unistd.h>
 
